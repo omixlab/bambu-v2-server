@@ -1,0 +1,12 @@
+{
+    "name": "Tiny Caramel",
+    "description": "A webserver for melanoma QSAR models built using Bambu",
+    "models": [
+        {
+            "name": "SK-MEL-28 inhibition",
+            "model": "/home/fredericokremer/Documents/projects/bambu-v2-server/example/data/train/model.pickle",
+            "preprocessor": "/home/fredericokremer/Documents/projects/bambu-v2-server/example/data/preprocess/preprocessor.pickle",
+            "description": "SK-MEL-28 cell line growth inhibition assay"
+        }
+    ]
+}

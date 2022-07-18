@@ -1,6 +1,13 @@
 name: bambu-server
+channels:
+  - conda-forge
+  - rdkit
+  - mordred
 dependencies:
   - python=3.8
   - pip
+  - mordred
   - pip:
+    - git+https://github.com/samoturk/mol2vec
     - -r requirements.txt
+    - -e .

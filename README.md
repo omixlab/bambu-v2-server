@@ -2,10 +2,5 @@
 
 By Frederico Schmitt Kremer
 
-a simple webserver for bambu models
+bambu-server: model provisiong tool for Bambu
 
-## Setup
-
-```
-$ make setup
-```

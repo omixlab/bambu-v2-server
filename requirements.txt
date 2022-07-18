@@ -1,0 +1,6 @@
+bambu-qsar
+flask
+flask_sqlalchemy
+celery
+python-dotenv
+redis

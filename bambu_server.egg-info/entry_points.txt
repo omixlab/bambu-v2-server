@@ -1,0 +1,2 @@
+[console_scripts]
+bambu-server = bambu_server.server:main

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bambu-server
+Version: 0.0.1
+Summary: bambu-server: model provisiong tool for Bambu
+Author: Frederico Schmitt Kremer
+Author-email: leitzke.gi@gmail.com, fred.s.kremer@gmail.com
+Keywords: bioinformatics machine-learning data science drug discovery QSAR
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bambu-server
+
+By Frederico Schmitt Kremer
+
+bambu-server: model provisiong tool for Bambu
+
