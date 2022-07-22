@@ -2,6 +2,7 @@ FROM continuumio/miniconda3
 COPY . /home/
 WORKDIR /home
 RUN apt-get update
+RUN apt-get -y upgrade
 RUN apt install -y build-essential redis
 RUN conda env create --file environment.yml
 RUN conda init bash
@@ -15,4 +16,3 @@ RUN echo "conda activate bambu-server" > ~/.bashrc
 RUN echo "source activate bambu-server" > ~/.bashrc
 
 SHELL ["conda", "run", "-n", "bambu-server", "/bin/bash"]
-CMD ["/bin/bash", "bambu-server"]

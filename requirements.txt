@@ -1,4 +1,6 @@
 bambu-qsar
+gunicorn
+yagmail
 flask
 flask_sqlalchemy
 celery

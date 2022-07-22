@@ -9,5 +9,5 @@ except:
     pass
 
 app = Flask(__name__)
-redis_uri = os.environ['REDIS_URI']
+redis_uri = os.environ['BAMBU_REDIS_URI']
 celery = Celery(__name__, broker=redis_uri, backend=redis_uri)

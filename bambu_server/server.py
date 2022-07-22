@@ -2,6 +2,7 @@
 from .routes import app
 import argparse
 import json
+import os
 
 def main():
     argument_parser = argparse.ArgumentParser(description="bambu-server: model provisiong tool for Bambu")
@@ -12,7 +13,9 @@ def main():
 
     with open(arguments.config) as reader:
         app.config['BAMBU_CONFIG'] = json.loads(reader.read())
-
+        for m, model_data in enumerate(app.config['BAMBU_CONFIG']['models']):
+            app.config['BAMBU_CONFIG']['models'][m]['preprocessor'] = os.path.abspath(model_data['preprocessor'])
+            app.config['BAMBU_CONFIG']['models'][m]['model'] = os.path.abspath(model_data['model'])
     app.run(host=arguments.host, port=arguments.port)
 
 if __name__ == '__main__':

@@ -6,8 +6,9 @@ from .config import app, celery
 @app.route('/')
 def index():
     return render_template(
-        "index.html", 
-        app_name=app.config['BAMBU_CONFIG']['name']
+        "index.html",
+        app_name=app.config['BAMBU_CONFIG']['name'],
+        app_description=app.config['BAMBU_CONFIG']['description']
     )
 
 @app.route('/predict', methods=['POST'])
