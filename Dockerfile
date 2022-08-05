@@ -16,3 +16,4 @@ RUN echo "conda activate bambu-server" > ~/.bashrc
 RUN echo "source activate bambu-server" > ~/.bashrc
 
 SHELL ["conda", "run", "-n", "bambu-server", "/bin/bash"]
+CMD ["/bin/bash", ""]

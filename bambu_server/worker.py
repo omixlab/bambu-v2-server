@@ -34,15 +34,17 @@ def run_bambu_models(molecules_smiles:List[str], config:Dict) -> Dict:
             if predicted_activity_proba is None:
                 predicted_activity_proba_str = "N/A"
             else:
-                predicted_activity_proba_str = "%.2f"%(predicted_activity_proba * 100)
+                predicted_activity_proba_str = "%.4f"%(predicted_activity_proba * 100)
             results['results'][-1]['predictions'][model_name] = predicted_activity_proba_str
     
     return results
 
+'''
 @celery.task()
 def send_email_notification(subject, body, to):
     yag = yagmail.SMTP('mygmailusername', 'mygmailpassword')
     yag.send(to, subject, body)
+'''
 
 def main():
     argument_parser = argparse.ArgumentParser(description="bambu-worker: async execution of bambu models")

@@ -6,3 +6,4 @@ flask_sqlalchemy
 celery
 python-dotenv
 redis
+twine
