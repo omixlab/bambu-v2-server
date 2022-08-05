@@ -10,6 +10,8 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',
     keywords="bioinformatics machine-learning data science drug discovery QSAR",
+    include_package_data=True,
+    zip_safe=False,
     entry_points = {'console_scripts':[
         'bambu-server   = bambu_server.server:main',
         'bambu-worker   = bambu_server.worker:main'

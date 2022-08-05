@@ -1,0 +1,2 @@
+recursive-include bambu_server/templates *
+recursive-include bambu_server/static *
