@@ -1,9 +1,0 @@
-bambu-qsar
-gunicorn
-yagmail
-flask
-flask_sqlalchemy
-celery
-python-dotenv
-redis
-twine
